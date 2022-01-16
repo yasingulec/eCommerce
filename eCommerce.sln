@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerce.MicroService", "eCommerce.MicroService\eCommerce.MicroService.csproj", "{4B651782-3234-42CF-BB92-1B8CE012B85D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerce.Web", "eCommerce.Web\eCommerce.Web.csproj", "{FD6B6CFB-CC60-48D6-966C-2BE34919CEBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B651782-3234-42CF-BB92-1B8CE012B85D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B651782-3234-42CF-BB92-1B8CE012B85D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B651782-3234-42CF-BB92-1B8CE012B85D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B651782-3234-42CF-BB92-1B8CE012B85D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD6B6CFB-CC60-48D6-966C-2BE34919CEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6B6CFB-CC60-48D6-966C-2BE34919CEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD6B6CFB-CC60-48D6-966C-2BE34919CEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD6B6CFB-CC60-48D6-966C-2BE34919CEBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85873892-19E1-4CD3-9A94-46B1FC600505}
+	EndGlobalSection
+EndGlobal
