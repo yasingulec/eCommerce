@@ -1,6 +1,8 @@
+using eCommerce.MicroService.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -30,6 +32,10 @@ namespace eCommerce.MicroService
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "eCommerce.MicroService", Version = "v1" });
+            });
+            services.AddDbContext<EcommerceDbContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("Default"));
             });
         }
 
