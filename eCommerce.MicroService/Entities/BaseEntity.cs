@@ -9,6 +9,6 @@ namespace eCommerce.MicroService.Entities
     {
         public int Id { get; set; }
         public DateTime Created_At { get; set; }
-        public DateTime Modified_At { get; set; }
+        public DateTime? Modified_At { get; set; } = null;
     }
 }

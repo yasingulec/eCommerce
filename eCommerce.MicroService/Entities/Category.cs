@@ -8,6 +8,7 @@ namespace eCommerce.MicroService.Entities
     public class Category : BaseEntity
     {
         public string Name { get; set; }
+        //relation tanımı 
         public ICollection<Product> Products { get; set; }
     }
 }

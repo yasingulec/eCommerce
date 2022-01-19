@@ -38,6 +38,15 @@ namespace eCommerce.MicroService.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Created_At = new DateTime(2022, 1, 19, 23, 54, 23, 487, DateTimeKind.Local).AddTicks(4903),
+                            Modified_At = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Bilgisayar"
+                        });
                 });
 
             modelBuilder.Entity("eCommerce.MicroService.Entities.Product", b =>
@@ -73,6 +82,19 @@ namespace eCommerce.MicroService.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CategoryId = 1,
+                            Created_At = new DateTime(2022, 1, 19, 23, 54, 23, 489, DateTimeKind.Local).AddTicks(2888),
+                            Description = "AMD Ryzen 5 4600H 8GB 512GB SSD Windows 10 Home 16.1\" FHD Taşınabilir Bilgisayar",
+                            Modified_At = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Price = 9.499m,
+                            ProductName = "Huawei Matebook D 16",
+                            Quantity = 50
+                        });
                 });
 
             modelBuilder.Entity("eCommerce.MicroService.Entities.Product", b =>
