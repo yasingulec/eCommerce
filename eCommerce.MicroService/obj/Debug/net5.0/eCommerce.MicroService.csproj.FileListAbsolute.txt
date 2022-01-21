@@ -132,3 +132,10 @@ D:\GitProjects\eCommerce\eCommerce.MicroService\bin\Debug\net5.0\zh-Hans\Microso
 D:\GitProjects\eCommerce\eCommerce.MicroService\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\GitProjects\eCommerce\eCommerce.MicroService\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\GitProjects\eCommerce\eCommerce.MicroService\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\GitProjects\eCommerce\eCommerce.MicroService\obj\Debug\net5.0\eCommerce.MicroService.csproj.AssemblyReference.cache
+D:\GitProjects\eCommerce\eCommerce.MicroService\bin\Debug\net5.0\AutoMapper.dll
+D:\GitProjects\eCommerce\eCommerce.MicroService\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\GitProjects\eCommerce\eCommerce.MicroService\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\GitProjects\eCommerce\eCommerce.MicroService\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+D:\GitProjects\eCommerce\eCommerce.MicroService\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+D:\GitProjects\eCommerce\eCommerce.MicroService\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

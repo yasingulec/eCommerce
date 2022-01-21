@@ -1,4 +1,5 @@
 using eCommerce.MicroService.Data;
+using eCommerce.MicroService.Managers._ProductManager;
 using eCommerce.MicroService.Repository;
 using eCommerce.MicroService.Repository._ProductRepository;
 using Microsoft.AspNetCore.Builder;
@@ -40,8 +41,11 @@ namespace eCommerce.MicroService
                 options.UseSqlServer(Configuration.GetConnectionString("Default"));
             });
 
+            services.AddAutoMapper(typeof(Startup));
             services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IProductManager, ProductManager>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
