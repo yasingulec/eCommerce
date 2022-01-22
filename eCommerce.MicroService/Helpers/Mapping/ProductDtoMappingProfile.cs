@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using eCommerce.MicroService.Entities;
+using eCommerce.MicroService.Models._Category;
 using eCommerce.MicroService.Models._Product;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,8 @@ namespace eCommerce.MicroService.Helpers.Mapping
         public ProductDtoMappingProfile()
         {
             CreateMap<Product, ProductResponse>();
+            CreateMap<Product, ProductByCategoryResponse>();
+            CreateMap<Category, CategoryResponse>();
         }
     }
 }

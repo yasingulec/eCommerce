@@ -1,0 +1,21 @@
+﻿
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+
+
+            <div class="col-sm" style=" margin-top:20px;">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.ProductName</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Fiyat: @item.Price TL</h6>
+                        <p class="card-text">@item.Description</p>
+                        <p  class="card-link">Adet: @item.Quantity</p>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>

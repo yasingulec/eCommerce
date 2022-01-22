@@ -9,5 +9,6 @@ namespace eCommerce.MicroService.Managers._ProductManager
     public interface IProductManager
     {
         Task<List<Product>> GetProductsAsync();
+        Task<List<Product>> GetProductsByCategoryIdAsync(int id);
     }
 }

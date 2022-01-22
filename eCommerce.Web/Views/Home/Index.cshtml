@@ -1,0 +1,103 @@
+﻿@model List<eCommerce.Web.Models.Product>
+@{
+}
+
+<div class="row">
+    <div id="categoryCard" class="col-md-2" style="float: left; width:%50;">
+
+    </div>
+    <div id="jsCard" class="col-md-10 " style="width:%50;">
+
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $.ajax({
+    url: '@Url.Action("GetProducts", "Home")',
+    contentType: "text/html; charset=utf-8",
+    dataType: "text",
+    success: successFunc,
+    error: errorFunc
+        });
+        function successFunc(data, status) {
+            console.log(data)
+            var div = document.getElementById('jsCard').innerHTML=data;
+
+        }
+
+        function errorFunc() {
+            alert('error');
+        }
+
+
+    }
+    );
+
+
+
+</script>
+
+<script type="text/javascript">
+
+        $(document).ready(function () {
+
+        $.ajax({
+    url: '@Url.Action("GetCategories", "Home")',
+    contentType: "text/html; charset=utf-8",
+    dataType: "text",
+    success: successFunc,
+    error: errorFunc
+        });
+        function successFunc(data, status) {
+            console.log(data)
+            var div = document.getElementById('categoryCard').innerHTML=data;
+        
+        }
+
+        function errorFunc() {
+            alert('error');
+        }
+
+
+        });
+   
+  
+</script>
+
+<script type="text/javascript">
+
+    $(document).on('click', '#category', function (e) {
+        e.preventDefault();
+        var myVal = e.target.value;
+        //alert(myVal);
+        var product = { Id: myVal }
+        var productString = JSON.stringify(product);
+        $.ajax({
+            type: "POST",
+            data: productString,
+            url: "/Home/GetProductsByCategory",
+            dataType: 'text',
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                //alert(response);
+                document.getElementById('jsCard').innerHTML = response;
+            
+            },
+            error: function (response) {
+                alert(JSON.stringify(response.fail()));
+            }
+
+        });
+    });
+
+
+        //function sendCategory() {
+        ////alert($(this).find('.cats').text());
+        //var value = $(this).val();
+        //alert(value);
+
+
+</script>

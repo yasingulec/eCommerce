@@ -1,3 +1,6 @@
+using eCommerce.Web.Helpers.ViewRenderer;
+using eCommerce.Web.Services;
+using eCommerce.Web.Services.ClientServices;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,6 +25,11 @@ namespace eCommerce.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddScoped<IProductClient, ProductClient>();
+            services.AddScoped<IViewRenderService, ViewRenderService>();
+
+            services.AddHttpClient<ProductClient>();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
         }
@@ -46,7 +54,9 @@ namespace eCommerce.Web
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

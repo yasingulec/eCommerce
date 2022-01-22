@@ -35,5 +35,18 @@ namespace eCommerce.MicroService.Controllers
             }
             return BadRequest();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> ProductsByCategory(ProductQueryRequest query)
+        {
+            var products = await _productManager.GetProductsByCategoryIdAsync(query.Id);
+            if (products != null)
+            {
+                var productsReponse = _mapper.Map<List<ProductByCategoryResponse>>(products);
+                return Ok(productsReponse);
+            }
+            return BadRequest();
+        }
+
     }
 }

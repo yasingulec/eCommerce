@@ -8,5 +8,6 @@ namespace eCommerce.MicroService.Repository._ProductRepository
 {
     public interface IProductRepository : IRepository<Product>
     {
+        Task<IEnumerable<Product>> GetProductsByCategoryIdAsync(int id);
     }
 }

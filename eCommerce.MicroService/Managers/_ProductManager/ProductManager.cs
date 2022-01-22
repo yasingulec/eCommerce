@@ -19,5 +19,11 @@ namespace eCommerce.MicroService.Managers._ProductManager
            var products= await _productRepository.GetAllAsync();
             return products.ToList();
         }
+
+        public async Task<List<Product>> GetProductsByCategoryIdAsync(int id)
+        {
+            var products = await _productRepository.GetProductsByCategoryIdAsync(id);
+            return products.ToList();
+        }
     }
 }

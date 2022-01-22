@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DrGSPdDQNbL70OkDA1Xs69VoD28GfXUSBq8sAX5RZUfSsJZczYQ/Dy1koARVl0Czi0/Z6wbIv1LufzSAI45SBg==",
+  "dgSpecHash": "ZvYp1L/xa8oeMy9DLHRg06MskJi6oqORheTBRskXaoy508JHnA7IhY1DxqTcy6eO0TmEkw1NHgZXvCDKFQ2/GA==",
   "success": true,
   "projectFilePath": "D:\\GitProjects\\eCommerce\\eCommerce.Web\\eCommerce.Web.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\yasin\\.nuget\\packages\\microsoft.codeanalysis.razor\\5.0.6\\microsoft.codeanalysis.razor.5.0.6.nupkg.sha512",
     "C:\\Users\\yasin\\.nuget\\packages\\microsoft.extensions.dependencymodel\\5.0.0\\microsoft.extensions.dependencymodel.5.0.0.nupkg.sha512",
     "C:\\Users\\yasin\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\yasin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\yasin\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\yasin\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\yasin\\.nuget\\packages\\system.reflection.metadata\\5.0.0\\system.reflection.metadata.5.0.0.nupkg.sha512",

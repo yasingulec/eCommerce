@@ -29,7 +29,7 @@ namespace eCommerce.MicroService.Migrations
                     b.Property<DateTime>("Created_At")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("Modified_At")
+                    b.Property<DateTime?>("Modified_At")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -43,9 +43,20 @@ namespace eCommerce.MicroService.Migrations
                         new
                         {
                             Id = 1,
-                            Created_At = new DateTime(2022, 1, 19, 23, 54, 23, 487, DateTimeKind.Local).AddTicks(4903),
-                            Modified_At = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 175, DateTimeKind.Local).AddTicks(4826),
                             Name = "Bilgisayar"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 176, DateTimeKind.Local).AddTicks(1816),
+                            Name = "Tablet"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 176, DateTimeKind.Local).AddTicks(1830),
+                            Name = "Telefon"
                         });
                 });
 
@@ -65,7 +76,7 @@ namespace eCommerce.MicroService.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("Modified_At")
+                    b.Property<DateTime?>("Modified_At")
                         .HasColumnType("datetime2");
 
                     b.Property<decimal>("Price")
@@ -88,11 +99,160 @@ namespace eCommerce.MicroService.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            Created_At = new DateTime(2022, 1, 19, 23, 54, 23, 489, DateTimeKind.Local).AddTicks(2888),
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2366),
                             Description = "AMD Ryzen 5 4600H 8GB 512GB SSD Windows 10 Home 16.1\" FHD Taşınabilir Bilgisayar",
-                            Modified_At = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Price = 9.499m,
                             ProductName = "Huawei Matebook D 16",
+                            Quantity = 50
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CategoryId = 1,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2389),
+                            Description = " Intel Core i3 1115G4 8GB 256GB SSD Windows 10 Home 15.6\" FHD Taşınabilir Bilgisayar",
+                            Price = 6.499m,
+                            ProductName = "Dell Vostro 3500",
+                            Quantity = 30
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CategoryId = 1,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2391),
+                            Description = "Intel Core i3 1115G4 4GB 256GB SSD Windows 10 Home 15.6\" FHD Taşınabilir Bilgisayar 2N2N6EA",
+                            Price = 5.298m,
+                            ProductName = "HP 15S-FQ2038NT",
+                            Quantity = 47
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CategoryId = 1,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2393),
+                            Description = "Intel Celeron N4020 4GB 128GB SSD Windows 10 Home 14.0'' Taşınabilir Bilgisayar",
+                            Price = 3.999m,
+                            ProductName = "Lenovo Ideapad 1 14IGL05",
+                            Quantity = 83
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CategoryId = 1,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2396),
+                            Description = "Intel Celeron N4020 4GB 128GB SSD Windows 10 Home 15.6\" Taşınabilir Bilgisayar",
+                            Price = 3.949m,
+                            ProductName = "Asus X515MA-BR423T",
+                            Quantity = 12
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CategoryId = 2,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2400),
+                            Description = "TB-X606F 64GB 10.3\" Wi-Fi Tablet - Gri ZA5T0215TR",
+                            Price = 2.137m,
+                            ProductName = "Lenovo TAB M10",
+                            Quantity = 150
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CategoryId = 2,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2402),
+                            Description = "64GB 10.2\" WiFi Tablet - MK2K3TU/A Uzay Grisi",
+                            Price = 4.939m,
+                            ProductName = "Apple iPad 9. Nesil",
+                            Quantity = 500
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CategoryId = 2,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2405),
+                            Description = "32 GB (Samsung Türkiye Garantili)",
+                            Price = 1.471m,
+                            ProductName = "Samsung Galaxy Tab A7 Lite",
+                            Quantity = 93
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CategoryId = 3,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2407),
+                            Description = "128 GB 6 GB Ram (Xiaomi Türkiye Garantili)",
+                            Price = 4.469m,
+                            ProductName = "Xiaomi Redmi Note 10S",
+                            Quantity = 21
+                        },
+                        new
+                        {
+                            Id = 12,
+                            CategoryId = 3,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2410),
+                            Description = "128 GB (Samsung Türkiye Garantili)",
+                            Price = 2.499m,
+                            ProductName = "Samsung Galaxy M22",
+                            Quantity = 300
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CategoryId = 3,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2412),
+                            Description = "(TCL Türkiye Garantili)",
+                            Price = 2.660m,
+                            ProductName = "TCL 10 SE 128",
+                            Quantity = 1200
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CategoryId = 3,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2414),
+                            Description = "16 GB (Reeder Türkiye Garantili)",
+                            Price = 1.419m,
+                            ProductName = "Reeder P13 Blue Max Lite",
+                            Quantity = 488
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CategoryId = 3,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2416),
+                            Description = "128 GB (Infinix Türkiye Garantili)",
+                            Price = 2.930m,
+                            ProductName = "Infinix Hot 10T",
+                            Quantity = 50
+                        },
+                        new
+                        {
+                            Id = 16,
+                            CategoryId = 3,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2418),
+                            Description = "(HTC Türkiye Garantili)",
+                            Price = 2.858m,
+                            ProductName = "HTC Desire 20 Pro",
+                            Quantity = 60
+                        },
+                        new
+                        {
+                            Id = 17,
+                            CategoryId = 3,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2420),
+                            Description = "256 GB",
+                            Price = 25.499m,
+                            ProductName = "iPhone 13 Pro",
+                            Quantity = 2200
+                        },
+                        new
+                        {
+                            Id = 18,
+                            CategoryId = 3,
+                            Created_At = new DateTime(2022, 1, 22, 19, 24, 57, 177, DateTimeKind.Local).AddTicks(2422),
+                            Description = "128 GB (Oneplus Türkiye Garantili)",
+                            Price = 4.004m,
+                            ProductName = "Oneplus Nord N10 5G",
                             Quantity = 50
                         });
                 });

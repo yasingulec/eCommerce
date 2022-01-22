@@ -1,6 +1,8 @@
 using eCommerce.MicroService.Data;
+using eCommerce.MicroService.Managers._CategoryManager;
 using eCommerce.MicroService.Managers._ProductManager;
 using eCommerce.MicroService.Repository;
+using eCommerce.MicroService.Repository._CategoryRepository;
 using eCommerce.MicroService.Repository._ProductRepository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -44,6 +46,8 @@ namespace eCommerce.MicroService
             services.AddAutoMapper(typeof(Startup));
             services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<ICategoryManager, CategoryManager>();
             services.AddScoped<IProductManager, ProductManager>();
 
         }
