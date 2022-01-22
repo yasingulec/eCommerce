@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace eCommerce.MicroService.Entities
 {
-    public class BaseEntity
+    //base abstract domain object
+    public abstract class BaseEntity
     {
         public int Id { get; set; }
         public DateTime Created_At { get; set; }

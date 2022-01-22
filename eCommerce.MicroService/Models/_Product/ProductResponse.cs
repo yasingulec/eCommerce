@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.MicroService.Models._Product
 {
+    //dto
     public class ProductResponse
     {
         public string ProductName { get; set; }

@@ -352,5 +352,4 @@ D:\GitProjects\eCommerce\eCommerce.Web\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\Razor\Views\Product.cshtml.g.cs
-D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\eCommerce.Web.csproj.AssemblyReference.cache
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\Razor\Views\Category.cshtml.g.cs

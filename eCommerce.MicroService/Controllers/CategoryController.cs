@@ -23,6 +23,7 @@ namespace eCommerce.MicroService.Controllers
             _mapper = mapper;
         }
 
+        //action for getting all the categories
         [HttpGet]
         public async Task<IActionResult> Category()
         {

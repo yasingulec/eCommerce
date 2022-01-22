@@ -36,6 +36,7 @@ namespace eCommerce.MicroService.Controllers
             return BadRequest();
         }
 
+        //gets products by category id
         [HttpPost]
         public async Task<IActionResult> ProductsByCategory(ProductQueryRequest query)
         {

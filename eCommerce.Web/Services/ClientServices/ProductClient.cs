@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.Web.Services.ClientServices
 {
+    //product client for making http calls to microservice
     public class ProductClient:IProductClient
     {
         private HttpClient _client;

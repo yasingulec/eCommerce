@@ -9,7 +9,7 @@ namespace eCommerce.MicroService.Extensions
 {
     public static class ModelBuilderExtensions
     {
-        //extension method for seed data
+        //extension method for seed data which used for generating datas
         public static void Seed(this ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(new List<Category> {
@@ -18,6 +18,7 @@ namespace eCommerce.MicroService.Extensions
                   new Category{Id=3,Name="Telefon",Created_At=DateTime.Now},
             });
 
+          
             modelBuilder.Entity<Product>().HasData(new List<Product> {
                 new Product{Id=1,ProductName="Huawei Matebook D 16", CategoryId=1,Description="AMD Ryzen 5 4600H 8GB 512GB SSD Windows 10 Home 16.1\" FHD Taşınabilir Bilgisayar",Quantity=50,Price=9.499M,Created_At=DateTime.Now},
                 new Product{Id=2,ProductName="Dell Vostro 3500", CategoryId=1,Description=" Intel Core i3 1115G4 8GB 256GB SSD Windows 10 Home 15.6\" FHD Taşınabilir Bilgisayar",Quantity=30,Price=6.499M,Created_At=DateTime.Now},

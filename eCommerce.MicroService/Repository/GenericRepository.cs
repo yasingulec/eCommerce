@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.MicroService.Repository
 {
+    //generic repository which is used for crud operations for every object
     public class GenericRepository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity
     {
         private EcommerceDbContext _dbContext;

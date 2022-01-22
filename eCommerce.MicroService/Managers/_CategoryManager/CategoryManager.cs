@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.MicroService.Managers._CategoryManager
 {
+    //business logic for category
     public class CategoryManager : ICategoryManager
     {
         private ICategoryRepository _categoryRepository;

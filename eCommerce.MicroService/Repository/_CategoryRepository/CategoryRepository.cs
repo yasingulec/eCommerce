@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.MicroService.Repository._CategoryRepository
 {
+    //repository for category context
     public class CategoryRepository : GenericRepository<Category>,ICategoryRepository
     {
         private EcommerceDbContext _dbContext;

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.MicroService.Repository._ProductRepository
 {
+    //repository for product context
     public class ProductRepository:GenericRepository<Product>,IProductRepository
     {
         private EcommerceDbContext _dbContext;

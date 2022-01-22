@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.MicroService.Managers._ProductManager
 {
+    //business logic for product
     public class ProductManager : IProductManager
     {
         private IProductRepository _productRepository;

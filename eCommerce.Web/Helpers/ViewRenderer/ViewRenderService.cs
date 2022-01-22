@@ -29,6 +29,7 @@ namespace eCommerce.Web.Helpers.ViewRenderer
             _serviceProvider = serviceProvider;
         }
 
+        //render views as strings
         public async Task<string> RenderToStringAsync(string viewName, object model)
         {
             var httpContext = new DefaultHttpContext { RequestServices = _serviceProvider };

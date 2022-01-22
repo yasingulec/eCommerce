@@ -11,6 +11,7 @@ namespace eCommerce.MicroService.Helpers.Mapping
 {
     public class ProductDtoMappingProfile:Profile
     {
+        //creates mapping configuration for response objects
         public ProductDtoMappingProfile()
         {
             CreateMap<Product, ProductResponse>();

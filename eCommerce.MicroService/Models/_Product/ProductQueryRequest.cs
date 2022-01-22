@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.MicroService.Models._Product
 {
+    //dto
     public class ProductQueryRequest
     {
         public int Id { get; set; }
