@@ -299,6 +299,7 @@ D:\GitProjects\eCommerce\eCommerce.Web\bin\Debug\net5.0\Microsoft.CodeAnalysis.d
 D:\GitProjects\eCommerce\eCommerce.Web\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
 D:\GitProjects\eCommerce\eCommerce.Web\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
 D:\GitProjects\eCommerce\eCommerce.Web\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\GitProjects\eCommerce\eCommerce.Web\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\GitProjects\eCommerce\eCommerce.Web\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
 D:\GitProjects\eCommerce\eCommerce.Web\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
 D:\GitProjects\eCommerce\eCommerce.Web\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -325,6 +326,7 @@ D:\GitProjects\eCommerce\eCommerce.Web\bin\Debug\net5.0\ru\Microsoft.CodeAnalysi
 D:\GitProjects\eCommerce\eCommerce.Web\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 D:\GitProjects\eCommerce\eCommerce.Web\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 D:\GitProjects\eCommerce\eCommerce.Web\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\eCommerce.Web.csproj.AssemblyReference.cache
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\eCommerce.Web.GeneratedMSBuildEditorConfig.editorconfig
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\eCommerce.Web.AssemblyInfoInputs.cache
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\eCommerce.Web.AssemblyInfo.cs
@@ -339,6 +341,11 @@ D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\scopedcss\bundle\eCommer
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\eCommerce.Web.TagHelpers.input.cache
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\eCommerce.Web.TagHelpers.output.cache
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\eCommerce.Web.RazorCoreGenerate.cache
+D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\Razor\Views\Category.cshtml.g.cs
+D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\Razor\Views\Product.cshtml.g.cs
+D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\eCommerce.Web.RazorTargetAssemblyInfo.cache
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\eCommerce.Web.RazorTargetAssemblyInfo.cs
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\eCommerce.Web.Views.pdb
@@ -347,9 +354,3 @@ D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\eCommerce.Web.dll
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\ref\eCommerce.Web.dll
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\eCommerce.Web.pdb
 D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\eCommerce.Web.genruntimeconfig.cache
-D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-D:\GitProjects\eCommerce\eCommerce.Web\bin\Debug\net5.0\Newtonsoft.Json.dll
-D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
-D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
-D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\Razor\Views\Product.cshtml.g.cs
-D:\GitProjects\eCommerce\eCommerce.Web\obj\Debug\net5.0\Razor\Views\Category.cshtml.g.cs

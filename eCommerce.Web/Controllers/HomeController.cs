@@ -23,13 +23,13 @@ namespace eCommerce.Web.Controllers
         }
         public async Task<IActionResult> GetCategories()
         {
-            var categories = _productClient.GetCategories().Result;
+            var categories =await _productClient.GetCategories();
             string content = await _viewRenderService.RenderToStringAsync("Category", categories);
             return Content(content);
         }
         public async Task <IActionResult> GetProducts()
         {
-            var products = _productClient.GetProducts().Result;
+            var products =await _productClient.GetProducts();
             string content =await _viewRenderService.RenderToStringAsync("Product", products);
 
             return Content(content);
@@ -38,7 +38,7 @@ namespace eCommerce.Web.Controllers
         [HttpPost]
          public async Task <IActionResult> GetProductsByCategory([FromBody]ProductQuery query)
         {
-            var products =  _productClient.GetProductsByCategory(query).Result;
+            var products = await _productClient.GetProductsByCategory(query);
             string content =await _viewRenderService.RenderToStringAsync("Product", products);
 
             return Content(content);
